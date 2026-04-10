@@ -1,21 +1,49 @@
-# recruitment-platform-dev - React 基础框架
+# 招聘平台 - 极简暗黑风格
 
-基于 React + TypeScript + Vite 的现代前端基础框架，符合 CI/CD 流水线标准。
+基于 React + TypeScript + Vite 开发的现代招聘平台，采用极简设计语言和暗黑模式。
 
-## 技术栈
+## 🎨 设计特点
 
-- **React 18** - 渐进式 UI 库
-- **TypeScript** - 类型安全的 JavaScript 超集
-- **Vite** - 下一代前端构建工具
-- **Vitest** - 原生支持 Vite 的单元测试框架
-- **ESLint** - 代码质量检查（含 JSDoc 规范）
+### 极简主义
+- 干净的布局和充足的留白
+- 直观的导航和信息层级
+- 去除不必要的装饰元素
 
-## 快速开始
+### 暗黑模式
+- 深色背景减少眼睛疲劳
+- 高对比度文字确保可读性
+- 适合长时间浏览
 
-### 环境要求
+### 主题色 #3FFFDC
+- 青绿色作为主色调
+- 渐变效果增强视觉层次
+- 统一的色彩语言
 
-- Node.js >= 20.0.0
-- npm >= 9.0.0
+## 🚀 功能特性
+
+### 职位搜索
+- 实时搜索过滤
+- 按职位标题或公司搜索
+- 清晰的搜索结果展示
+
+### 职位列表
+- 卡片式布局
+- 关键信息一目了然（薪资、地点、类型）
+- 悬停交互效果
+
+### 响应式设计
+- 完美适配手机、平板、桌面
+- 移动端优化导航
+- 触摸友好的交互
+
+## 🛠️ 技术栈
+
+- **React 18** - UI 库
+- **TypeScript** - 类型安全
+- **Vite** - 构建工具
+- **CSS Variables** - 主题管理
+
+## 📦 安装与运行
 
 ### 安装依赖
 
@@ -29,78 +57,97 @@ npm install
 npm run dev
 ```
 
-启动本地开发服务器，访问 http://localhost:3000
-
-### 构建生产版本
+### 生产构建
 
 ```bash
 npm run build
 ```
 
-输出目录：`dist/`
-
-### 预览生产构建
+### 预览构建
 
 ```bash
 npm run preview
 ```
 
-## 可用命令
-
-| 命令 | 描述 |
-|------|------|
-| `npm run dev` | 启动开发服务器 |
-| `npm run build` | 构建生产版本 |
-| `npm run preview` | 预览生产构建 |
-| `npm run lint` | ESLint 代码规范检查 |
-| `npm run test` | 运行单元测试 |
-| `npm run test:watch` | 监听模式运行测试 |
-
-## 项目结构
+## 📁 项目结构
 
 ```
 recruitment-platform-dev/
-├── __tests__/           # 测试文件目录
-│   └── App.test.tsx
-├── src/                 # 源代码目录
+├── src/
 │   ├── App.tsx          # 主应用组件
-│   ├── main.tsx         # 应用入口
-│   └── index.css        # 全局样式
-├── index.html           # HTML 模板
-├── package.json         # 项目配置
-├── tsconfig.json        # TypeScript 配置
-├── vite.config.ts       # Vite 配置
-├── vitest.config.ts     # Vitest 测试配置
-└── .eslintrc.cjs        # ESLint 配置
+│   ├── index.css        # 全局样式
+│   └── main.tsx         # 入口文件
+├── index.html
+├── package.json
+└── README.md
 ```
 
-## CI/CD 集成
+## 🎯 设计规范
 
-本项目已配置符合 GitHub Actions CI 流水线的标准：
+### 颜色
+- 主色：#3FFFDC（青绿色）
+- 背景：#0A0A0A（纯黑）
+- 文字：#FFFFFF（纯白）
 
-- ✅ 文档验证（README.md + JSDoc 注释）
-- ✅ 静态代码检查（ESLint + JSDoc 规范）
-- ✅ 安全漏洞扫描（npm audit）
-- ✅ 圈复杂度检查（max complexity: 10）
-- ✅ 单元测试执行
+### 间距
+- xs: 4px
+- sm: 8px
+- md: 16px
+- lg: 24px
+- xl: 32px
 
-## 代码规范
+### 圆角
+- sm: 4px
+- md: 8px
+- lg: 12px
+- xl: 16px
 
-### JSDoc 注释要求
+## 📊 组件
 
-```typescript
-/**
- * 组件/函数描述
- * @param paramName - 参数说明
- * @returns 返回值说明
- */
-```
+### 导航栏
+- 品牌标识
+- 导航链接（职位/公司/简历）
+- 发布职位按钮
 
-ESLint 配置包含以下 JSDoc 规则：
-- `jsdoc/check-access` - 检查 @access 标签
-- `jsdoc/check-alignment` - 检查注释对齐
-- `jsdoc/require-jsdoc` - 要求函数/类声明有文档
+### 搜索区
+- 大标题
+- 搜索输入框
+- 搜索按钮
 
-## License
+### 职位卡片
+- 职位名称
+- 公司名称
+- 薪资范围
+- 地点/类型/发布时间
+- 申请按钮
+
+## 🔍 搜索功能
+
+支持按以下条件搜索：
+- 职位名称
+- 公司名称
+
+## 📱 响应式断点
+
+- 移动端：< 768px
+- 平板：768px - 1024px
+- 桌面：> 1024px
+
+## ✅ 验收标准
+
+- [x] 极简设计风格
+- [x] 暗黑模式
+- [x] 主题色 #3FFFDC
+- [x] 响应式布局
+- [x] 职位搜索功能
+- [x] 职位列表展示
+- [x] 交互反馈
+
+## 📄 License
 
 MIT
+
+---
+
+**Quest Task**: #2328
+**Organization**: Recruitment (4UDWGYZ)
